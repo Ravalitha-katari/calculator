@@ -1,0 +1,82 @@
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: auto; /* Adjust to fit content */
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px; /* Reduced height */
+    margin-bottom: 10px; /* Space below the display box */
+    padding: 10px;
+    font-size: 20px; /* Reduced font size */
+    text-align: right;
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /* Fixed button width */
+    gap: 10px; /* Space between buttons */
+    width: 100%;
+    justify-content: center; /* Center buttons */
+    margin-bottom: 10px; /* Space below the button container */
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f7f7d1; /* Pale yellow color */
+    color: black;
+    border: none;
+    width: 60px; /* Button width */
+    height: 60px; /* Button height */
+    border-radius: 50%; /* Make buttons circular */
+    outline: none;
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type=button]:hover {
+    background-color: #e0e0a3; /* Slightly darker pale yellow on hover */
+}
+
+input:active[type=button] {
+    background-color: #c4c478; /* Even darker pale yellow when active */
+    transform: scale(0.95); /* Slightly scale down */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the "=" button */
+.equals-button {
+    background-color: #fb0066; /* Red color */
+    color: white;
+    grid-column: 4; /* Place in the last column */
+    border-radius: 50%; /* Ensure circular shape */
+}
+
+/* Style for the "C" button in a box */
+.clear-button {
+    background-color: #fb0066; /* Red color */
+    color: white;
+    border-radius: 50%; /* Circular shape for consistency */
+    width: 60px; /* Button width */
+    height: 60px; /* Button height */
+}
+.h{
+    text-align: center;
+    font-style: normal;
+    font-size: larger;
+}
